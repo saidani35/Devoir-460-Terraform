@@ -25,14 +25,6 @@ variable "ARM_SUBSCRIPTION_ID" {
   type = string
 }
 
-# Paramètres VM
-variable "computer_name" {
-  type = string
-}
-
-variable "admin_username" {
-  type = string
-}
 
 variable "admin_password" {
   type      = string

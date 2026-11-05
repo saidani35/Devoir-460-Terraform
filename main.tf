@@ -46,9 +46,9 @@ resource "azurerm_network_interface" "nic" {
     subnet_id                     = azurerm_subnet.subnet.id
     private_ip_address_allocation = "Dynamic"
   }
-tags = {
-  Projet = "DevoirCR460"
-}
+  tags = {
+    Projet = "DevoirCR460"
+  }
 }
 
 
@@ -76,7 +76,7 @@ resource "azurerm_key_vault" "kv" {
     ]
   }
 
-tags = {
+  tags = {
     Projet = "DevoirCR460"
   }
 }
@@ -152,7 +152,7 @@ resource "azurerm_container_group" "container" {
   }
 
   image_registry_credential {
-    server = "acrcr460malika4073.azurecr.io"
+    server                    = "acrcr460malika4073.azurecr.io"
     user_assigned_identity_id = azurerm_user_assigned_identity.acr_identity.id
   }
 

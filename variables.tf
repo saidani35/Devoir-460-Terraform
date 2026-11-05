@@ -7,10 +7,6 @@ variable "prefix" {
   type = string
 }
 
-variable "ARM_SUBSCRIPTION_ID" {
-  type = string
-}
-
 # Paramètres VM
 variable "computer_name" {
   type = string

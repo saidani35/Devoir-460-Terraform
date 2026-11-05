@@ -1,0 +1,26 @@
+
+name: Test approbation CR460
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  terraform-plan:
+    name: "1 - Simulation Terraform Plan"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simuler Terraform Plan
+        run: echo "Simulation du plan Terraform - aucune ressource Azure modifiee"
+
+  terraform-apply:
+    name: "3 - Simulation Terraform Apply"
+    needs: terraform-plan
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+    steps:
+      - name: Simuler Terraform Apply
+        run: echo "Approbation recue - simulation terminee sans deploiement Azure"

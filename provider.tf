@@ -20,8 +20,3 @@ provider "azurerm" {
   features {}
 
 }
-
-resource "azurerm_resource_group" "rg_cr460" {
-  name     = "rg-cr460-malika"
-  location = "Canada Central"
-}

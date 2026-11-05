@@ -1,0 +1,18 @@
+# Fichiers Terraform locaux
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# Variables sensibles
+*.tfvars
+*.tfvars.json
+
+# Fichiers de sauvegarde
+main-*.txt
+*-backup.txt
+
+# Identifiants
+credentials.tfrc.json
+*.pem
+*.key
